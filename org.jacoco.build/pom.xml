@@ -91,7 +91,9 @@
     <module>../org.jacoco.report</module>
     <module>../org.jacoco.agent.rt</module>
     <module>../org.jacoco.agent</module>
+    -->
     <module>../org.jacoco.ant</module>
+    <!--
     <module>../org.jacoco.cli</module>
     <module>../org.jacoco.examples</module>
     <module>../jacoco-maven-plugin</module>
@@ -141,7 +143,7 @@
     <argLine>${jvm.args}</argLine>
 
     <!-- Dependencies versions -->
-    <asm.version>9.7</asm.version>
+    <asm.version>9.6</asm.version>
     <ant.version>1.9.16</ant.version>
     <args4j.version>2.0.28</args4j.version>
     <junit.version>4.13.2</junit.version>

@@ -1,7 +1,7 @@
 version: 2
 updates:
   - package-ecosystem: "maven"
-    directory: "/"
+    directory: "/org.jacoco.core"
     schedule:
       interval: "daily"
     labels:
@@ -9,6 +9,15 @@ updates:
       - "component: core"
     allow:
       - dependency-name: "org.ow2.asm:*"
+  - package-ecosystem: "maven"
+    directory: "/org.jacoco.ant"
+    schedule:
+      interval: "daily"
+    labels:
+      - "dependencies"
+      - "component: ant"
+    allow:
+      - dependency-name: "org.apache.ant:*"
   - package-ecosystem: "maven"
     directory: "/org.jacoco.build"
     schedule:
