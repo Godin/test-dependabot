@@ -84,6 +84,25 @@
     </contributor>
   </contributors>
 
+  <modules>
+    <!-- Order is important: org.jacoco.agent.rt embeds into org.jacoco.agent and JaCoCo Agent used during tests -->
+    <module>../org.jacoco.core</module>
+    <!--
+    <module>../org.jacoco.report</module>
+    <module>../org.jacoco.agent.rt</module>
+    <module>../org.jacoco.agent</module>
+    <module>../org.jacoco.ant</module>
+    <module>../org.jacoco.cli</module>
+    <module>../org.jacoco.examples</module>
+    <module>../jacoco-maven-plugin</module>
+
+    <module>../org.jacoco.tests</module>
+
+    <module>../org.jacoco.doc</module>
+    <module>../jacoco</module>
+    -->
+  </modules>
+
   <scm>
     <connection>scm:git:git://github.com/jacoco/jacoco.git</connection>
     <developerConnection>scm:git:ssh://git@github.com:jacoco/jacoco.git</developerConnection>

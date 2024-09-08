@@ -6,11 +6,19 @@ updates:
       interval: "daily"
     labels:
       - "dependencies"
+      - "component: core"
     allow:
       - dependency-name: "org.ow2.asm:*"
+  - package-ecosystem: "maven"
+    directory: "/org.jacoco.build"
+    schedule:
+      interval: "daily"
+    labels:
+      - "dependencies"
+      - "component: build"
+    allow:
       - dependency-name: "org.apache.maven.plugins:*"
       - dependency-name: "org.codehaus.mojo:*"
-      - dependency-name: "org.jetbrains.kotlin:*"
     ignore:
       # TODO add comment
       - dependency-name: "org.apache.maven.plugins:maven-plugin-plugin"
@@ -18,6 +26,4 @@ updates:
       # Requires Java 6
       - dependency-name: "org.apache.maven.plugins:maven-surefire-plugin"
         versions: ">=2.20.0"
-      # Requires Java 8
-      - dependency-name: "org.apache.ant:ant"
-        versions: ">=1.10.0"
+    open-pull-requests-limit: 10
