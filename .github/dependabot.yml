@@ -4,3 +4,6 @@ updates:
   directory: "/"
   schedule:
     interval: daily
+  ignore:
+    - dependency-name: "org.apache.maven.plugins:maven-clean-plugin"
+      versions: ">=3.4.0"
