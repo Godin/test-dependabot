@@ -28,6 +28,8 @@ updates:
     allow:
       - dependency-name: "org.apache.maven.plugins:*"
       - dependency-name: "org.codehaus.mojo:*"
+      - dependency-name: "com.diffplug.spotless:*"
+      - dependency-name: "org.sonarsource.scanner.maven:*"
     ignore:
       # TODO add comment
       - dependency-name: "org.apache.maven.plugins:maven-plugin-plugin"
@@ -35,4 +37,4 @@ updates:
       # Requires Java 6
       - dependency-name: "org.apache.maven.plugins:maven-surefire-plugin"
         versions: ">=2.20.0"
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 20
