@@ -1,5 +1,19 @@
 version: 2
+registries:
+  eclipse:
+    type: maven-repository
+    url: https://repo.eclipse.org/content/repositories/cbi-releases/
 updates:
+  - package-ecosystem: "maven"
+    directory: "/"
+    registries: "*"
+    schedule:
+      interval: "daily"
+    labels:
+      - "dependencies"
+    allow:
+      - dependency-name: "org.eclipse.cbi.maven.plugins:*"
+      - dependency-name: "org.apache.maven.plugins:maven-clean-plugin"
   - package-ecosystem: "maven"
     directory: "/org.jacoco.core"
     schedule:
